@@ -33,8 +33,8 @@ Start the Docker container:
 docker compose up -d
 ```
 
-Then, open your browser and go to [http://localhost](http://localhost).
-_If you want to use another port, you can change it in the `[compose.yaml](./compose.yaml)` file._
+Then, open your browser and go to [http://localhost][3].
+_If you want to use another port, you can change it in the [compose.yaml][4] file._
 
 Deploy with Kubernetes locally
 -----
@@ -47,10 +47,10 @@ Deploy the application:
 kubectl apply -f nginx.yaml
 ```
 
-Then, open your browser and go to [http://localhost:30100/](http://localhost:30100/).
-_If you want to use another port, you can change the **NodePort** key with the value you want in the `[nginx.yaml](./nginx.yaml)` file._
+Then, open your browser and go to [http://localhost:30100][5].
+_If you want to use another port, you can change the **NodePort** key with the value you want in the [nginx.yaml][6] file._
 
-⚠️ **Be careful, you can't use the port you want, you need to use one between 30000 and 32767 like described [here](https://kubernetes.io/docs/reference/networking/ports-and-protocols/) for NodePort.** ⚠️
+⚠️ **Be careful, you can't use the port you want, you need to use one between 30000 and 32767 like described [here][7] for NodePort.** ⚠️
 
 Destroy the application:
 
@@ -60,3 +60,8 @@ kubectl delete -f nginx.yaml
 
 [1]: https://www.docker.com/products/docker-desktop/
 [2]: https://kubernetes.io/releases/download/
+[3]: http://localhost
+[4]: ./compose.yaml
+[5]: http://localhost:30100
+[6]: ./nginx.yaml
+[7]: https://kubernetes.io/docs/reference/networking/ports-and-protocols
