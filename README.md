@@ -58,6 +58,29 @@ Destroy the application:
 kubectl delete -f nginx.yaml
 ```
 
+Helm
+-----
+
+Install project with [Helm][8]:
+
+```console
+helm install hello-from-nginx helm-nginx
+```
+
+_The `hello-from-nginx` name is not important. It's the project name, you can change it to whatever you want._
+
+Upgrade project:
+
+```console
+helm upgrade hello-from-nginx helm-nginx
+```
+
+Delete project with helm:
+
+```console
+helm uninstall hello-from-nginx
+```
+
 [1]: https://www.docker.com/products/docker-desktop/
 [2]: https://kubernetes.io/releases/download/
 [3]: http://localhost
@@ -65,3 +88,4 @@ kubectl delete -f nginx.yaml
 [5]: http://localhost:30100
 [6]: ./nginx.yaml
 [7]: https://kubernetes.io/docs/reference/networking/ports-and-protocols
+[8]: https://helm.sh/
