@@ -15,7 +15,7 @@ Installation
 Clone this repository:
 
 ```console
-https://github.com/abdounikarim/poc-nginx
+https://github.com/ProofOfConceptFactory/poc-nginx
 ```
 
 Go on the project root folder:
